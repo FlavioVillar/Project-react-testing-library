@@ -3,12 +3,12 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from './helpers/renderWithRouter';
 import { About } from '../components';
 
-describe('Testes do componente About.js ', () => {
+describe.only('Testes do componente About.js ', () => {
   it('Verifica se a página contém as informações sobre a Pokédex', () => {
     renderWithRouter(<About />);
 
     const headingPokedex = screen.getByRole('heading', {
-      name: /page requested not foundcrying emoji/i,
+      name: /About Pokédex/i,
     });
     expect(headingPokedex).toBeInTheDocument();
   });
