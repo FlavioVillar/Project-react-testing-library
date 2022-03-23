@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from './helpers/renderWithRouter';
 import { About } from '../components';
 
-describe.only('Testes do componente About.js ', () => {
+describe('Testes do componente About.js ', () => {
   it('Verifica se a página contém as informações sobre a Pokédex', () => {
     renderWithRouter(<About />);
 
