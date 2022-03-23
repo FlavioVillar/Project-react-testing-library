@@ -4,12 +4,11 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouter from './helpers/renderWithRouter';
 import App from '../App';
 
-describe.only('Testes do componente Pokemon.js ', () => {
+describe('Testes do componente Pokemon.js ', () => {
   it('Verifica se a imagem do Pokémon é exibida', () => {
     renderWithRouter(<App />);
     const imgPokemon = screen.getByRole('img', { name: /pikachu sprite/i });
     expect(imgPokemon.src).toContain('https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png');
-    // screen.logTestingPlaygroundURL()
   });
 
   it('Verifica se o tipo correto do pokémon é mostrado na tela. ', () => {
