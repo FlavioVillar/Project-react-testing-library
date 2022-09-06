@@ -2,7 +2,7 @@
 
 Projeto desenvolvido por estudante durante o curso de desenvolvimento front-end da **Trybe**
 
-Aplicação com casos de teste para a aplicação front-end.
+Aplicação com casos de testes para a aplicação front-end.
 
 Todo o código que foi escrito por mim (testes) está dentro da pasta `src/tests`, a aplicação front-end foi fornecida pela Trybe.
 
